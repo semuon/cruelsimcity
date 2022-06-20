@@ -1,0 +1,19 @@
+# Path to OpenBLAS, ARPACK
+
+LIB_INC         = 
+
+LIB_LD          = 
+
+# set DEBUG_LEVEL = 0 for full optimization (-O3) and disable all debug functionality
+# set DEBUG_LEVEL = 1 for full optimization (-O3) and enable all debug macroses (range checks etc.)
+# set DEBUG_LEVEL = 2 to compile in debug mode (-O0 -g) and enable all debug macroses (range checks etc.)
+DEBUG_LEVEL     =       0
+
+# provide specific options for compilers
+CPPFLAGS	=	-Wall -fopenmp
+CCFLAGS		=	-std=c99 -Wall -fopenmp
+
+# Compilers
+CC          =  gcc
+CPP         =  g++
+LD          =  g++
